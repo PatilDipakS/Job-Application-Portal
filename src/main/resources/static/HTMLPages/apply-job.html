@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="HTMLPages/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Apply for this position</h2>
+        <form id="jobApplicationForm" onsubmit="return validateForm()">
+			<br>
+            <div class="form-group">
+                <label for="empName">Full Name <span>*</span></label>
+                <input type="text" id="empName" name="empName" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="empEmail">Email <span>*</span></label>
+                <input type="email" id="empEmail" name="empEmail" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="empMobile">Phone <span>*</span></label>
+                <input type="tel" id="empMobile" name="empMobile" required>
+                <small class="error-message"></small>
+            </div>
+
+
+		
+			<div class="form-group">
+			    <label for="empDesignation">Postion <span>*</span></label>
+			    <select id="empDesignation" name="empDesignation" required>
+			        <option value="">-- Select  --</option>
+					<option value="Java Developer">Java Developer</option>
+			        <option value="Java Technical Lead">Java Technical Lead</option>
+			        <option value="Technical Support Engineer">Technical Support Engineer</option>
+					<option value="Sales Engineer<">Sales Engineer</option>
+			        
+			    </select>
+			</div>
+
+							
+
+            <div class="form-group">
+                <label for="empResume">Upload CV/Resume <span>*</span></label>
+                <input type="file" id="empResume" name="empResume" accept=".pdf,.doc,.docx" required>
+                <small>Allowed Type(s): .pdf, .doc, .docx</small>
+                <small class="error-message"></small>
+            </div>
+
+            <label class="checkbox-container">
+                <input type="checkbox" id="terms" required>
+                By using this form you agree with the storage and handling of your data by this website.
+            </label>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
