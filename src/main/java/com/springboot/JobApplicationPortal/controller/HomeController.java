@@ -11,13 +11,7 @@ public class HomeController {
 	
     @GetMapping("/")
     public String home() {
-        return "HTMLPages/apply-job.html"; // Looks for index.html in templates/
+        return "HTMLPages/apply-job.html";
     }
     
-//    @PostMapping("/save")
-//    public String saveData() {
-//        return "HTMLPages/apply-job.html"; // Looks for index.html in templates/
-//    }
-//    
-
 }
